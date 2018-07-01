@@ -1,6 +1,6 @@
 {
   "name": "hacker-news-favorties-api",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "reactual",
   "main": "src/index.js",
   "repository": "https://www.github.com/reactual/hacker-news-favorites-api",
