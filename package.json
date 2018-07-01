@@ -1,0 +1,13 @@
+{
+  "name": "reactual/hnfavs",
+  "version": "0.0.0",
+  "author": "reactual",
+  "stdlib": {
+    "name": "reactual/hnfavs",
+    "publish": true,
+    "timeout": 10000
+  },
+  "dependencies": {
+    "x-ray": "^2.3.3"
+  }
+}
