@@ -1,13 +1,52 @@
 {
-  "name": "reactual/hnfavs",
+  "name": "hacker-news-favorties-api",
   "version": "0.0.4",
   "author": "reactual",
+  "main": "src/index.js",
+  "repository": "https://www.github.com/reactual/hacker-news-favorites-api",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Stephen Richardson",
+      "url": "https://www.github.com/sbr464"
+    }
+  ],
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon -q",
+    "start": "NODE_ENV=production node src/index.js",
+    "test": "jest",
+    "format": "prettier --write --config package.json \"{,src/**/}*.js\""
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "verbose": true,
+    "testPathIgnorePatterns": ["/node_modules/"]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "useTabs": false,
+    "printWidth": 80,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "arrowParens": "avoid"
+  },
   "stdlib": {
     "name": "reactual/hnfavs",
     "publish": true,
     "timeout": 100000
   },
+  "nodemonConfig": {
+    "watch": "src",
+    "exec": "node src/main.js"
+  },
   "dependencies": {
     "x-ray": "^2.3.3"
+  },
+  "devDependencies": {
+    "jest": "^23.2.0",
+    "prettier": "^1.13.7"
   }
 }
