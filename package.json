@@ -1,6 +1,6 @@
 {
   "name": "hacker-news-favorites-api",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "author": "reactual",
   "main": "src/index.js",
   "repository": "https://www.github.com/reactual/hacker-news-favorites-api",
@@ -36,7 +36,7 @@
   "stdlib": {
     "name": "reactual/hnfavs",
     "publish": true,
-    "timeout": 100000
+    "timeout": 30000
   },
   "nodemonConfig": {
     "watch": "src",
