@@ -4,29 +4,52 @@
 # hacker-news-favorites-api
 A simple script that will scrape the favorites for a provided hacker news user id
 
-https://news.ycombinator.com/favorites?id=sbr464 -> https://reactual.lib.id/hnfavs@dev?id=sbr464&limit=1
+[Before](https://news.ycombinator.com/favorites?id=sbr464) ⇨ [After](https://reactual.lib.id/hnfavs@dev?id=sbr464&limit=1) 👍
 
-Currently hosted on stdlib.com, may change.
+Additional docs and testing available at [stdlib](https://stdlib.com/@reactual/lib/hnfavs/dev/).
 
-Docs available at https://stdlib.com/@reactual/lib/hnfavs/dev/
+## Usage
 
-# Usage
+You can run yourself, or use the api endpoint hosted at the above url. Be sure to pass the query params mentioned below.
 
-### Free API Endpoint
-You can run yourself, or the api endpoint hosted at the following url. Be sure to pass the query params mentioned below.
+##### Base Endpoint:
+`https://reactual.lib.id/hnfavs@dev`
 
-https://reactual.lib.id/hnfavs@dev
+##### Example URL:
+`https://reactual.lib.id/hnfavs@dev?id=sbr464&limit=1`
+
 ---
-Accepts 3 query params
+Accepts 3 query params, only `id` is required.
 
-### id
-required, string, the hn user id. Default is '', and will error if not provided.
+#### id
+*required* | `string` | default='' | The Hacker News username.
 
-### limit 
-optional, number, for pagination, 30 favs/page. Default is 1
+#### limit
+*optional* | `number` | default=1 | Max # of pages to download (30/page).
 
-### offset
-optional, number, to offset pagination. Sending a value of 5 would start on the 5th page, (skip the newest 120 favorites). Default is 1 (no offset).
+#### offset
+*optional* | `number` | default=1 (none) | Pagination offset, the page to begin on.
 
-# Notes
+---
+
+## Notes
 The timeout for the API endpoint on (stdlib.com)[https://stdlib.com/] is currently 30 seconds. You may need to provide an offset and make multiple requests to download over 10-15 pages if you receive a timeout. If you hit the timeout, you will get an error only, not any results.
+
+
+## Local Installation
+
+
+```bash
+
+# Clone repo
+$ git clone git@github.com:reactual/hacker-news-favorites-api.git
+
+$ cd hacker-news-favorites-api
+
+# Install with yarn or npm
+$ yarn
+
+# Run tests
+$ yarn test
+
+```
