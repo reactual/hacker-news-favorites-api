@@ -57,7 +57,7 @@ The API will return a JSON object-array containg the favorites as below. You can
 ```
 
 ## Notes
-Currently, the request timeout on is manually set to just under 3 minutes, but could change. You may need to provide an offset and make multiple requests if you are getting a timeout when trying to download hundreds-thousands+ of favorites. If you receive a timeout error, modify the limit/offset and retry the request. We are using [stdlib](https://stdlib.com/) to host the api.
+Currently, the request timeout is manually set to just under 3 minutes, but could change. You may need to provide an offset and make multiple requests if you are getting a timeout when trying to download hundreds-thousands+ of favorites. If you receive a timeout error, modify the limit/offset and retry the request. We are using [stdlib](https://stdlib.com/) to host the api.
 
 ## More Info
 Additional docs & a live testing tool avail at [stdlib](https://stdlib.com/@reactual/lib/hnfavs/dev/).
