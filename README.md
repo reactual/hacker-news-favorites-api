@@ -1,3 +1,6 @@
+<img src="img.png" alt="alt text" width="600">
+
+
 # hacker-news-favorites-api
 A simple script that will scrape the favorites for a provided hacker news user id
 
