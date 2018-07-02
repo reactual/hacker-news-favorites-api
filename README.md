@@ -6,7 +6,6 @@ A simple script that will scrape the favorites for a provided hacker news user i
 
 [Before](https://news.ycombinator.com/favorites?id=sbr464) ⇨ [After](https://reactual.lib.id/hnfavs@dev?id=sbr464&limit=1) 👍
 
----
 
 ## Why?
 The official Hacker News API from Y Combinator doesn't include the favorites endpoint. I use favorites like bookmarks and wanted to sync them to another app.
