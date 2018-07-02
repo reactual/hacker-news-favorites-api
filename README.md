@@ -14,7 +14,7 @@ You can run yourself, or the api endpoint hosted at the following url. Be sure t
 
 https://reactual.lib.id/hnfavs@dev
 ---
-Accepts 2 query params
+Accepts 3 query params
 
 ### id
 required, string, the hn user id. Default is '', and will error if not provided.
@@ -22,4 +22,8 @@ required, string, the hn user id. Default is '', and will error if not provided.
 ### limit 
 optional, number, for pagination, 30 favs/page. Default is 1
 
+### offset
+optional, number, to offset pagination. Sending a value of 5 would start on the 5th page, (skip the newest 120 favorites). Default is 1 (no offset).
 
+# Notes
+The timeout for the API endpoint on (stdlib.com)[https://stdlib.com/] is currently 30 seconds. You may need to provide an offset and make multiple requests to download over 10-15 pages if you receive a timeout. If you hit the timeout, you will get an error only, not any results.
