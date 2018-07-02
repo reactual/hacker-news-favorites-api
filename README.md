@@ -16,6 +16,8 @@ You can run yourself, or use the api endpoint hosted at the above url. Be sure t
 `https://reactual.lib.id/hnfavs@dev`
 
 ##### Example URL:
+This example would download 1 page of 30 favorites for the user `sbr464`
+
 `https://reactual.lib.id/hnfavs@dev?id=sbr464&limit=1`
 
 ---
