@@ -13,7 +13,7 @@ The official Hacker News API from Y Combinator doesn't include the favorites end
 
 ## Usage
 
-You can run yourself, or use the api endpoint hosted at the above url. Be sure to pass the query params mentioned below.
+You can run yourself, or use the api endpoint hosted at the below url. Be sure to pass the query params mentioned below.
 
 ##### Base Endpoint:
 `https://reactual.lib.id/hnfavs@dev`
