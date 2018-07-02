@@ -34,12 +34,30 @@ Accepts 3 query params, only `id` is required.
 
 ---
 
+## Data Format
+The API will return a JSON object-array containg the favorites as below. You can use the article id to obtain more info via the [HackerNews API](https://github.com/HackerNews/API). There is more info (comments link, score) avail to scrape from favorites, but the HN API is more reliable.
+
+```js
+[
+  {
+    /** HN article id */
+    "id": "17437185",
+    /** Article's direct url (not hn comments link) */
+    "link": "https://github.com/serhii-londar/open-source-mac-os-apps",
+    /** Title of the article on HN */
+    "title": "Awesome macOS open source applications"
+  },
+  {
+    //...
+  }
+]
+```
+
 ## Notes
 Currently, the api timeout on [stdlib](https://stdlib.com/) is 30 seconds. You may need to provide an offset and make multiple requests to download over ~10 pages (300 favorites). If you receive a timeout error, modify the limit/offset and retry the request.
 
-
 ## Local Installation
-
+It's a node.js app, using [x-ray](https://github.com/matthewmueller/x-ray) for the web scraping. See `src/main.test.js` for example usage locally.
 
 ```bash
 
