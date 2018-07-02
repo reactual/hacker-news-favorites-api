@@ -44,15 +44,14 @@ The API will return a JSON object-array containg the favorites as below. You can
 ```js
 [
   {
-    /** HN article id */
+    // HN article id
     "id": "17437185",
-    /** Article's direct url (not hn comments link) */
+
+    // Article's direct url (not comments)
     "link": "https://github.com/serhii-londar/open-source-mac-os-apps",
-    /** Title of the article on HN */
+
+    // Title of the article on HN
     "title": "Awesome macOS open source applications"
-  },
-  {
-    //...
   }
 ]
 ```
