@@ -1,12 +1,12 @@
 const Xray = require('x-ray')
 const x = Xray()
 
-module.exports = async (id = '', limit = 1, context) => {
+module.exports = async (id = '', limit = 1, offset = 1, context) => {
   if (!id || typeof id !== 'string') throw Error('invalid user id')
 
   const u = id.toLowerCase()
-
-  const url = `https://news.ycombinator.com/favorites?id=${u}`
+  const page = offset < 1 ? 1 : offset
+  const url = `https://news.ycombinator.com/favorites?id=${u}&p=${page}`
 
   const selector = 'tr.athing'
   const id_selector = '@id'
