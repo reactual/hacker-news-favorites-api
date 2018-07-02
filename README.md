@@ -2,7 +2,10 @@
 
 
 # hacker-news-favorites-api
-A simple script that will scrape the favorites for a provided hacker news user id
+A simple script that will scrape the favorites for a provided hacker news user id.
+
+# Why?
+The official API for Hacker News from Y Combinator doesn't include the user favorites endpoint. I'm use favorites like bookmarks personally, and wanted to sync them to another app.
 
 [Before](https://news.ycombinator.com/favorites?id=sbr464) ⇨ [After](https://reactual.lib.id/hnfavs@dev?id=sbr464&limit=1) 👍
 
@@ -35,7 +38,7 @@ Accepts 3 query params, only `id` is required.
 ---
 
 ## Data Format
-The API will return a JSON object-array containg the favorites as below. You can use the article id to obtain more info via the [HackerNews API](https://github.com/HackerNews/API). There is more info (comments link, score) avail to scrape from favorites, but the HN API is more reliable.
+The API will return a JSON object-array containg the favorites as below. You can use the article id to obtain more info via the [Hacker News API](https://github.com/HackerNews/API). There is more info (comments link, score) avail to scrape from favorites, but the HN API is more reliable.
 
 ```js
 [
