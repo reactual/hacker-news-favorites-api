@@ -35,7 +35,7 @@ Accepts 3 query params, only `id` is required.
 ---
 
 ## Notes
-The timeout for the API endpoint on (stdlib.com)[https://stdlib.com/] is currently 30 seconds. You may need to provide an offset and make multiple requests to download over 10-15 pages if you receive a timeout. If you hit the timeout, you will get an error only, not any results.
+Currently, the api timeout on [stdlib](https://stdlib.com/) is 30 seconds. You may need to provide an offset and make multiple requests to download over 10-15 pages if you receive a timeout. If you hit the timeout, you will get an error only, not any results.
 
 
 ## Local Installation
