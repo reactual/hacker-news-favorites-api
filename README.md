@@ -60,7 +60,7 @@ The API will return a JSON object-array containg the favorites as below. You can
 Currently, the request timeout is manually set to just under 3 minutes, but could change. You may need to provide an offset and make multiple requests if you are getting a timeout when trying to download hundreds-thousands+ of favorites. If you receive a timeout error, modify the limit/offset and retry the request. We are using [stdlib](https://stdlib.com/) to host the api.
 
 ## More Info
-Additional docs & a live testing tool avail at [stdlib](https://stdlib.com/@reactual/lib/hnfavs/dev/).
+Additional docs & a live testing tool avail at [stdlib](https://stdlib.com/@reactual/lib/hnfavs/).
 
 ## Local Installation
 It's a node.js app, using [x-ray](https://github.com/matthewmueller/x-ray) for the web scraping. See `src/main.test.js` for example usage locally.
