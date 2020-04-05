@@ -4,7 +4,7 @@
 # hacker-news-favorites-api
 A simple script that will scrape the favorites for a provided hacker news user id.
 
-[Before](https://news.ycombinator.com/favorites?id=sbr464) ⇨ [After](https://reactual.lib.id/hnfavs@dev?id=sbr464&limit=1) 👍
+[Before](https://news.ycombinator.com/favorites?id=sbr464) ⇨ [After](https://reactual.api.stdlib.com/hnfavs/?id=sbr464&limit=1) 👍
 
 
 ## Why?
@@ -16,12 +16,12 @@ The official Hacker News API from Y Combinator doesn't include the favorites end
 You can run yourself, or use the api endpoint hosted at the below url. Be sure to pass the query params mentioned below.
 
 ##### Base Endpoint:
-`https://reactual.lib.id/hnfavs@dev`
+`https://reactual.api.stdlib.com/hnfavs/`
 
 ##### Example URL:
 This example would download 1 page of 30 favorites for the user `sbr464`
 
-`https://reactual.lib.id/hnfavs@dev?id=sbr464&limit=1`
+`https://reactual.api.stdlib.com/hnfavs/?id=sbr464&limit=1`
 
 ---
 Accepts 3 query params, only `id` is required.
