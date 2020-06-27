@@ -4,7 +4,11 @@ const BASE_URL = 'https://news.ycombinator.com/favorites',
   MORE = 'a.morelink@href',
   SELECTOR = 'tr.athing',
   SELECTOR_LIST = [
-    { id: '@id', title: 'a.storylink', link: 'a.storylink@href' },
+    {
+      id: '@id',
+      title: 'a.storylink',
+      link: 'a.storylink@href',
+    },
   ]
 
 module.exports = async (id, limit, offset, context) => {
