@@ -1,18 +1,21 @@
 const x = require('x-ray')()
 
-module.exports = async (id = '', limit = 1, offset = 1, context) => {
-  if (!id || typeof id !== 'string') throw Error('invalid user id')
+const MORE = 'a.morelink@href',
+  SELECTOR = 'tr.athing',
+  SELECTOR_LIST = [{ id: '@id', title: 'a.storylink', link: 'a.storylink@href' }],
+  BASE_URL = 'https://news.ycombinator.com/favorites'
 
-  const user = id.toLowerCase(),
-    articleId = '@id',
-    title = 'a.storylink',
-    link = `${title}@href`,
-    selector = 'tr.athing',
-    more = 'a.morelink@href',
-    page = offset < 1 ? 1 : offset,
-    url = `https://news.ycombinator.com/favorites?id=${user}&p=${page}`
+module.exports = async (id, limit, offset, context) => {
+  if (typeof id !== 'string' || !(id.length > 0)) {
+    throw TypeError('The user id argument is a required, non-empty string.')
+  }
+  
+  if (typeof limit !== 'number' || !(limit >= 1)) limit = 1
+  if (typeof offset !== 'number' || !(offset >= 1)) offset = 1
 
-  return await x(url, selector, [{ id: articleId, title, link }])
-    .paginate(more)
+  const userId = id.toLowerCase()
+  
+  return await x(`${BASE_URL}?id=${userId}&p=${offset}`, SELECTOR, SELECTOR_LIST)
+    .paginate(MORE)
     .limit(limit)
 }
