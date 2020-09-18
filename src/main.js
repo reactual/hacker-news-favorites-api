@@ -12,12 +12,12 @@ const BASE_URL = 'https://news.ycombinator.com/favorites',
   ]
 
 module.exports = async (id, limit, offset, context) => {
-  if (typeof id !== 'string' || !(id.length > 0)) {
+  if (!(typeof id === 'string' && id.length > 0)) {
     throw new TypeError('The user id argument is a required, non-empty string.')
   }
-
-  if (typeof limit !== 'number' || !(limit >= 1)) limit = 1
-  if (typeof offset !== 'number' || !(offset >= 1)) offset = 1
+  
+  if (!(typeof limit === 'number' && limit >= 1)) limit = 1
+  if (!(typeof offset === 'number' && offset >= 1)) offset = 1
 
   const userId = id.toLowerCase(),
     url = BASE_URL + `?id=${userId}&p=${offset}`
