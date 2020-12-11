@@ -1,6 +1,6 @@
 {
   "name": "hnfavs",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "author": "Reactual",
   "browser": "dist/hnfavs.js",
   "module": "dist/main.js",
