@@ -1,0 +1,2 @@
+const e=require("x-ray")(),r=[{id:"@id",title:"a.storylink",link:"a.storylink@href"}];module.exports=async(t,i,n,o)=>{if(!("string"==typeof t&&t.length>0))throw new TypeError("The user id argument is a required, non-empty string.");"number"==typeof i&&i>=1||(i=1),"number"==typeof n&&n>=1||(n=1);const a=`https://news.ycombinator.com/favorites?id=${t.toLowerCase()}&p=${n}`;return await e(a,"tr.athing",r).paginate("a.morelink@href").limit(i)};
+//# sourceMappingURL=main.js.map
