@@ -7,6 +7,8 @@
   "main": "dist/index.js",
   "repository": "https://www.github.com/reactual/hacker-news-favorites-api",
   "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
   "private": false,
   "contributors": [
     {
