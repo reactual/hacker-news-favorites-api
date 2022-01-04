@@ -6,7 +6,7 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "hnfavs": "0.0.11",
+    "hnfavs": "file:../",
     "x-ray": "^2.3.4"
   }
 }

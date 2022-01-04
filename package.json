@@ -1,23 +1,22 @@
 {
   "name": "hnfavs",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "author": "Reactual",
   "browser": "dist/hnfavs.js",
   "module": "dist/main.js",
   "main": "dist/index.js",
-  "repository": "https://www.github.com/reactual/hacker-news-favorites-api",
+  "repository": "https://github.com/reactual/hacker-news-favorites-api",
   "license": "MIT",
-  "type": "module",
   "sideEffects": false,
   "private": false,
   "contributors": [
     {
       "name": "Stephen Richardson",
-      "url": "https://www.github.com/sbr464"
+      "url": "https://github.com/sbrichardson"
     },
     {
       "name": "Reactual",
-      "url": "https://www.github.com/reactual"
+      "url": "https://github.com/reactual"
     }
   ],
   "scripts": {
@@ -65,6 +64,7 @@
   },
   "devDependencies": {
     "jest": "^23.2.0",
+    "nodemon": "^2.0.15",
     "prettier": "^1.13.7",
     "rollup": "^2.34.2",
     "rollup-plugin-terser": "^7.0.2",
