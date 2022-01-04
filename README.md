@@ -4,7 +4,7 @@
 
 A simple script that will scrape the favorites for a provided hacker news user id.
 
-[Before](https://news.ycombinator.com/favorites?id=sbr464) ⇨ [After](https://reactual.api.stdlib.com/hnfavs/?id=sbr464&limit=1) 👍
+[Before](https://news.ycombinator.com/favorites?id=sbr464) ⇨ [After](https://hnfavs.reactual.autocode.gg/?id=sbr464&limit=1) 👍
 
 ## Why?
 
@@ -16,13 +16,13 @@ You can run yourself, or use the api endpoint hosted at the below url. Be sure t
 
 ##### Base Endpoint:
 
-`https://reactual.api.stdlib.com/hnfavs/`
+`https://hnfavs.reactual.autocode.gg/`
 
 ##### Example URL:
 
 This example would download 1 page of 30 favorites for the user `sbr464`
 
-`https://reactual.api.stdlib.com/hnfavs/?id=sbr464&limit=1`
+`https://hnfavs.reactual.autocode.gg/?id=sbr464&limit=1`
 
 ---
 
@@ -63,11 +63,11 @@ The API will return a JSON object-array containg the favorites as below. You can
 
 ## Notes
 
-Currently, the request timeout is manually set to just under 3 minutes, but could change. You may need to provide an offset and make multiple requests if you are getting a timeout when trying to download hundreds-thousands+ of favorites. If you receive a timeout error, modify the limit/offset and retry the request. We are using [stdlib](https://stdlib.com/) to host the api.
+Currently, the request timeout is manually set to just under 3 minutes, but could change. You may need to provide an offset and make multiple requests if you are getting a timeout when trying to download hundreds-thousands+ of favorites. If you receive a timeout error, modify the limit/offset and retry the request. We are using [autocode](https://autocode.com/) to host the api. (stdlib.com rebranded to autocode.com)
 
 ## More Info
 
-Additional docs & a live testing tool avail at [stdlib](https://stdlib.com/@reactual/lib/hnfavs/).
+Additional docs & a live testing tool avail at [autocode](https://autocode.com/lib/reactual/hnfavs/).
 
 ## Installation via npm
 
